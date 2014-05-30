@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/profile_app_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <!-- Name -->
+
+        <TextView
+            android:id="@+id/name_title"
+            style="@style/dtutorEditTextLabel"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/name_val"
+            style="@style/dtutorEditText"
+            android:hint="@string/name_hint"
+            android:inputType="textCapWords" />
+
+        <!-- Email -->
+
+        <TextView
+            android:id="@+id/email"
+            style="@style/dtutorEditTextLabel"
+            android:text="@string/email" />
+
+        <EditText
+            android:id="@+id/email_val"
+            style="@style/dtutorEditText"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="@string/email_hint"
+            android:textColorHighlight="#000000" />
+
+        <!-- Courses -->
+
+        <LinearLayout
+            android:id="@+id/add_courses_layout_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/courses_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/course_list"
+                android:textColor="#372c24" />
+
+            <ImageButton
+                android:id="@+id/add_button_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="40dp"
+                android:background="@android:drawable/ic_input_add" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_new_profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/major_title"
+            style="@style/dtutorEditTextLabel"
+            android:layout_marginTop="20dp"
+            android:text="@string/major" />
+
+        <EditText
+            android:id="@+id/major"
+            style="@style/dtutorEditText"
+            android:hint="@string/major_hint" />
+
+        <TextView
+            android:id="@+id/class_title"
+            style="@style/dtutorEditTextLabel"
+            android:text="@string/year" />
+
+        <EditText
+            android:id="@+id/year"
+            style="@style/dtutorEditText"
+            android:hint="@string/year_hint" />
+
+        <TextView
+            android:id="@+id/gpa_title"
+            style="@style/dtutorEditTextLabel"
+            android:text="@string/gpa" />
+
+        <EditText
+            android:id="@+id/gpa"
+            style="@style/dtutorEditText"
+            android:hint="@string/gpa_hint" />
+
+        <!-- About -->
+
+        <TextView
+            android:id="@+id/about_title"
+            style="@style/dtutorEditTextLabel"
+            android:text="@string/about" />
+
+        <EditText
+            android:id="@+id/about_val_p"
+            style="@style/dtutorEditTextLabel"
+            android:layout_margin="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/about_box"
+            android:hint="@string/about_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="5" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save_button" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel_button" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</ScrollView>

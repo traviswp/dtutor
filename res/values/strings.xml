@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Top-Level Application Strings -->
+
+    <string name="app_name">DTutor</string>
+    <string name="action_settings">Settings</string>
+    <string name="Dept">Dept</string>
+    <string name="Courses">Courses</string>
+
+    <!-- Tab Strings -->
+
+    <string name="ui_tabname_home">home</string>
+    <string name="ui_tabname_search">search</string>
+    <string name="ui_tabname_profile">profile</string>
+    
+    <!-- Home Fragment Strings -->
+    <string name="my_notifications">My Notifications</string>
+    <string name="my_reservations">My Reservations</string>
+
+    <!-- Profile Fragment Strings -->
+
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="course_list">Courses</string>
+    <string name="about">About</string>
+    <string name="email_hint">Enter Email Here</string>
+    <string name="name_hint">Enter Name Here</string>
+    <string name="about_hint">Enter information about yourself here</string>
+    <string name="major_hint">Enter your major (e.g. Department)</string>
+    <string name="year_hint">Enter your class (e.g. 2018)</string>
+    <string name="gpa_hint">Enter your GPA (e.g. 4.0)</string>
+    <string name="major">Major [Department]</string>
+    <string name="year">Class</string>
+    <string name="gpa">GPA</string>
+    <string name="save_button">Save</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- TODO: (?) Login Tab Strings -->
+
+    <string name="tutor_button">Tutor</string>
+    <string name="tutee_button">Tutee</string>
+    <string name="login_button">Login</string>
+    <string name="signup_button">Sign Up</string>
+
+    <!-- Login Activity Strings -->
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register New Account</string>
+    <string name="link_to_login_text"><u>Back to Sign In</u></string>
+    <string name="link_to_register_text"><u>Sign Up for DTutor</u></string>
+    <string name="login_title">DTutor Login</string>
+    <string name="prompt_id">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Full Name</string>
+    <string name="prompt_user_type">User Type</string>
+    <string name="prompt_courses_tutor">Your Tutor Courses</string>
+    <string name="prompt_courses_tutee">Your Tutee Courses</string>
+    <string name="action_sign_in_register"><b>Sign in</b></string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="login_progress_signing_in">Signing in&#8230;</string>
+    <string name="action_sign_up_register"><b>Sign up</b></string>
+    <string name="action_sign_up_short">Sign up</string>
+    <string name="login_progress_signing_up">Signing up&#8230;</string>
+    <string name="error_invalid_name">Not a valid name</string>
+    <string name="error_invalid_email">Not a valid email address</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_login">Incorrect email or password</string>
+    <string name="error_failed_registration">Error occurred in registration</string>
+    <string name="error_field_required">Required</string>
+
+    <!-- Message Strings -->
+
+    <string name="complete_profile_message">Please complete your profile:\n\n Add courses that you want to tutor or courses you need help with!</string>
+    <string name="book_a_room_welcome_message">Welcome to \'Book a Room\':\n\n click on any of our building flags to book your room!</string>
+
+    <!-- Menu Strings -->
+
+    <string name="ui_menu_login_as_dev">Log In as Dev</string>
+    <string name="ui_menu_book_room">Book a Room</string>
+    <string name="ui_menu_logout">Log Out</string>
+
+    <!-- Activity Titles -->
+
+    <string name="title_activity_map_display">Book a Room</string>
+    <string name="title_activity_reservations">Browse Rooms</string>
+    <string name="title_activity_tutee_application">TuteeApplication</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tutor_app">TutorApp</string>
+    <string name="title_activity_add_fake_records_app">Add Fake Records</string>
+    <string name="availability">Availability</string>
+    <string name="day">Choose Day</string>
+
+    <string-array name="list_of_days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+</resources>

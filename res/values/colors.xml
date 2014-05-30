@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="focused">#24b2eb</drawable>
+    <drawable name="selected">#FF00FF</drawable>
+    <color name="blue">#ABCFFF</color>
+</resources>

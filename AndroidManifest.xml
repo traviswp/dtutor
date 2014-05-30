@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.dartmouth.cs.dtutor"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <!-- Application Permissions: Required for Google Maps to work properly. -->
+    <permission
+        android:name="edu.dartmouth.cs.myruns.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    
+    <!-- Application Permissions: General permissions. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Application Permissions: Google Maps related permissions. -->
+    <uses-permission android:name="edu.dartmouth.cs.myruns.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    <!-- Google Maps Version Specification -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+
+        <!-- Google Maps Meta-Data -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDyewgoYwkAKf_6xXwTQq7Wy_9vU0O9MW4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <!-- Activities -->
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.MapDisplayActivity"
+            android:label="@string/title_activity_map_display" >
+        </activity>
+        
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.AddFakeRecords"
+            android:label="@string/title_activity_add_fake_records_app" >
+        </activity>
+        
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.ReservationsBrowseActivity"
+            android:label="@string/title_activity_reservations"
+            android:theme="@style/Theme.Transparent" 
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.ReservationsActivity"
+            android:label="@string/title_activity_reservations"
+            android:theme="@style/Theme.Transparent" 
+            android:configChanges="orientation" >
+        </activity>
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="edu.dartmouth.cs.dtutor.ActivitySingleEntryDisplay"
+            android:label="Member Details" >
+        </activity>
+        <activity
+            android:name="edu.dartmouth.cs.TuteeApplication"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_tutee_application" >
+        </activity>
+        <activity
+            android:name="edu.dartmouth.cs.dtutor.TutorApp"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/title_activity_tutor_app" >
+        </activity>
+        
+
+        <!-- Services -->
+        
+    </application>
+
+</manifest>

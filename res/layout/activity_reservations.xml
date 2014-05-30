@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reservationsContainerLayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/reservationsTvHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservations"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="30sp" />
+    
+    <TextView
+        android:id="@+id/reservationsTvSubHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="italic"
+        android:textSize="25sp" />
+    
+    <DatePicker 
+        android:id="@+id/reservationsDatePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <ListView
+	    android:id="@+id/reservationsListView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="25sp"
+	    android:fontFamily="sans-serif-thin"
+	    android:textColor="#ffffff" />
+        
+</LinearLayout>
