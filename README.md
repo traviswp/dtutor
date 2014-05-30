@@ -5,6 +5,10 @@ CS165 project repository for Dartmouth 'DTutor' android application.
 
 DTutor is a specialty smartphone app designed by students for students. The primary goal of this application is to help students of all disciplines find tutors to help them with their courses. We accomplish this by providing a friendly interface that allows tutors and tutees to specify information about themselves and what they are looking for, search for and connect with others, as well as reserve a space for their tutor/tutee sessions. 
 
+**NOTE:** This page addresses both client and server components for this project -- the server-side code can be found at: [dtutor-server-scripts][dss].
+
+[dss]: https://github.com/traviswp/dtutor-server-scripts.git
+
 Resources
 ===========
 
