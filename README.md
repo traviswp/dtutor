@@ -29,11 +29,11 @@ Resources
 How-To: Run the Demo
 ===========
 
-####Server-Side Setup
+##Server-Side Setup
 
 **Note:** *Below are instructions for starting from scratch and setting up a server running MySQL and PHP, however, we don't expect that everyone will want to go through the whole process everytime they want to use the server for this application - therefore, we have left our server running; please feel free to use our server (while it remains up) for testing/playing with our Android app.*
 
-1. Get the code: git clone https://github.com/traviswp/dtutor-server-scripts.git
+1. Get the code: ```git clone https://github.com/traviswp/dtutor-server-scripts.git```
 2. Register for an account with '000webhost'. 
 3. Go to CPanel
 4. Under "Files" select "Another File Manager"
@@ -42,11 +42,11 @@ How-To: Run the Demo
 
 Now your server is setup!
 
-####Client-Side Setup
+##Client-Side Setup
 
 **Note:** *In order to run the DTutor app you will need our source code as well as the Google Play Services library which allows applications to use services such as Google Maps. The installation directions for this is outside of the scope of these instructions.*
 
-1. Get the code: git clone https://github.com/traviswp/dtutor.git
+1. Get the code: ```git clone https://github.com/traviswp/dtutor.git```
 2. Open Eclipse -- Go to File > Import… > Android > Existing Android Code Into Workspace > Browse… > (Navigate to where the project was downloaded to and select "open") > "Finish"
 3. Add google_play_services_lib to DTutor: Right-click on the DTutor project > Select "Properties" > Android > Remove the broken link (from our project) by clicking "Remove" with the library selected, then click "Add" and select "google_play_services_lib". 
 
@@ -55,15 +55,15 @@ Now you should have the app setup and ready to run! You can run the app by right
 Architectural Design
 ===========
 
-####Object Oriented Design Diagram
+##Object Oriented Design Diagram
 
 ![DTutor System Overview Design](docs/oodesign.png)
 
-####Class Descriptions
+##Class Descriptions
 
 Below we briefly describe the purpose of each of the classes that we have used in order to architect the dtutor app.
 
-###Package: edu.dartmouth.cs.dtutor
+####Package: edu.dartmouth.cs.dtutor
 
 * ```ActivitySingleEntryDisplay.java``` -- Activity to display a full screen description of a particular Tutor/Tutee’s profile information. Also, contains an image button that allows the user to send an email to the person who’s profile they are looking at.  Invoked when an entry in the search results is clicked.
 
@@ -105,7 +105,7 @@ Below we briefly describe the purpose of each of the classes that we have used i
 
 * ```TutorApp.java (deprecated)``` -- Activity that displays a form for the user to fill in when they register as a tutor (button present on the Home fragment).  Displays only those fields relevant to a tutor.
 
-###Package: edu.dartmouth.cs.dtutor.data
+####Package: edu.dartmouth.cs.dtutor.data
 
 * ```AsyncResponse.java``` -- Interface used to read the result of a started AsyncTask. Allows for communication between the AsyncTask thread and other threads.
 
@@ -127,7 +127,7 @@ Below we briefly describe the purpose of each of the classes that we have used i
 
 * ```UpdateMemberNotifications.java``` -- AsyncTask used to update the notifications field for a member on the server. 
 
-###Package: edu.dartmouth.cs.dtutor.utils
+####Package: edu.dartmouth.cs.dtutor.utils
 
 * ```AuthUtilities.java``` -- Utility class which acts specifically as an interface for packaging user data into JSON formatted string, sending/receiving data from the server about login/registration (success or failed), and managing local user database/tables for keeping track of the currently logged-in user.
 
@@ -140,8 +140,9 @@ Below we briefly describe the purpose of each of the classes that we have used i
 * ```SessionManager.java``` -- Class designed to provide easier interface to shared preferences for maintaining/using values relevant to a user's app use experience such as storing the state of the app (i.e. tutor/tutee), etc.
 
 * ```Utils.java``` -- General functions for string/number validation.
+
  
-###DTutorServerSide
+####DTutorServerSide
 
 * ```config.php``` -- Contains various global definitions that other scripts utilize such as database credentials or other shared/frequently used constants.
 
@@ -162,3 +163,27 @@ Below we briefly describe the purpose of each of the classes that we have used i
 
 * ```update_reservations.php``` -- Public script that client applications post data to in order to update a particular member's "reservation data" (i.e. add reservations).
 
+License
+===========
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Travis Peters
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
