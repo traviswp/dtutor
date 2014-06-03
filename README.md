@@ -30,7 +30,7 @@ Resources
 [2]: https://sites.google.com/site/gradroids/
 [3]: http://www.dartmouth.edu/~acskills/tutors/index.html
 
-How-To: Run the Demo
+Installation/Setup
 ===========
 
 ##Server-Side Setup
