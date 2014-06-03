@@ -1,0 +1,144 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.4
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Jun 02, 2014 at 11:14 AM
+-- Server version: 5.1.57
+-- PHP Version: 5.2.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `a6725582_tutors`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `locations`
+--
+
+CREATE TABLE IF NOT EXISTS `locations` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `building` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `room` varchar(50) COLLATE latin1_general_ci DEFAULT NULL,
+  `latitude` double(17,14) DEFAULT NULL,
+  `longitude` double(17,14) DEFAULT NULL,
+  `reservations` longtext COLLATE latin1_general_ci,
+  PRIMARY KEY (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=52 ;
+
+--
+-- Dumping data for table `locations`
+--
+
+INSERT INTO `locations` VALUES(1, 'Sudikoff', '', 43.70673044346993, -72.28718318045139, '[]');
+INSERT INTO `locations` VALUES(2, 'Sudikoff', 'SUDI 114', 43.70673044346993, -72.28718318045139, '[]');
+INSERT INTO `locations` VALUES(3, 'Sudikoff', 'SUDI 115', 43.70673044346993, -72.28718318045139, '[]');
+INSERT INTO `locations` VALUES(4, 'Sudikoff', 'SUDI 212', 43.70673044346993, -72.28718318045139, '[]');
+INSERT INTO `locations` VALUES(5, 'Sudikoff', 'SUDI 213', 43.70673044346993, -72.28718318045139, '[]');
+INSERT INTO `locations` VALUES(6, 'Sudikoff', 'SUDI 214', 43.70673044346993, -72.28718318045139, '[]');
+INSERT INTO `locations` VALUES(7, 'Life Sciences', '', 43.70908183628646, -72.28394877165556, '[]');
+INSERT INTO `locations` VALUES(8, 'Life Sciences', 'LSC 100', 43.70908183628646, -72.28394877165556, '[]');
+INSERT INTO `locations` VALUES(9, 'Life Sciences', 'LSC 105', 43.70908183628646, -72.28394877165556, '[]');
+INSERT INTO `locations` VALUES(10, 'Life Sciences', 'LSC 200', 43.70908183628646, -72.28394877165556, '[]');
+INSERT INTO `locations` VALUES(11, 'Life Sciences', 'LSC 201', 43.70908183628646, -72.28394877165556, '[]');
+INSERT INTO `locations` VALUES(12, 'Life Sciences', 'LSC 205', 43.70908183628646, -72.28394877165556, '[]');
+INSERT INTO `locations` VALUES(13, 'Baker Berry Library', '', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(14, 'Baker Berry Library', 'Baker 201', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(15, 'Baker Berry Library', 'Baker 213', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(16, 'Baker Berry Library', 'BerryL 178A', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(17, 'Baker Berry Library', 'BerryL 277', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(18, 'Baker Berry Library', 'BerryL 365', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(19, 'Baker Berry Library', 'BerryL 370', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(20, 'Baker Berry Library', 'BerryL 371', 43.70541486414427, -72.28876031935215, '[]');
+INSERT INTO `locations` VALUES(21, 'Thayer', '', 43.70460703371793, -72.29502830654383, '[]');
+INSERT INTO `locations` VALUES(22, 'Thayer', 'Cummings 102', 43.70460703371793, -72.29502830654383, '[]');
+INSERT INTO `locations` VALUES(23, 'Thayer', 'Cummings 105', 43.70460703371793, -72.29502830654383, '[]');
+INSERT INTO `locations` VALUES(24, 'Thayer', 'MacLean 101', 43.70460703371793, -72.29502830654383, '[]');
+INSERT INTO `locations` VALUES(25, 'Thayer', 'Murdough 335', 43.70460703371793, -72.29502830654383, '[]');
+INSERT INTO `locations` VALUES(26, 'Kemeny Hall', '', 43.70640518686137, -72.28912677615881, '[]');
+INSERT INTO `locations` VALUES(27, 'Kemeny Hall', '006', 43.70640518686137, -72.28912677615881, '[]');
+INSERT INTO `locations` VALUES(28, 'Kemeny Hall', '007', 43.70640518686137, -72.28912677615881, '[]');
+INSERT INTO `locations` VALUES(29, 'Kemeny Hall', '008', 43.70640518686137, -72.28912677615881, '[]');
+INSERT INTO `locations` VALUES(30, 'Kemeny Hall', '105', 43.70640518686137, -72.28912677615881, '[]');
+INSERT INTO `locations` VALUES(31, 'Kemeny Hall', '108', 43.70640518686137, -72.28912677615881, '[]');
+INSERT INTO `locations` VALUES(32, 'Wilder', '', 43.70534142546446, -72.28625413030386, '[]');
+INSERT INTO `locations` VALUES(33, 'Wilder', '102', 43.70534142546446, -72.28625413030386, '[{]');
+INSERT INTO `locations` VALUES(34, 'Wilder', '104', 43.70534142546446, -72.28625413030386, '[]');
+INSERT INTO `locations` VALUES(35, 'Wilder', '111', 43.70534142546446, -72.28625413030386, '[]');
+INSERT INTO `locations` VALUES(36, 'Wilder', '115', 43.70534142546446, -72.28625413030386, '[]');
+INSERT INTO `locations` VALUES(37, 'Thorton', '', 43.70338642079971, -72.28704169392586, '[]');
+INSERT INTO `locations` VALUES(38, 'Thorton', '101', 43.70338642079971, -72.28704169392586, '[]');
+INSERT INTO `locations` VALUES(39, 'Thorton', '103', 43.70338642079971, -72.28704169392586, '[]');
+INSERT INTO `locations` VALUES(40, 'Thorton', '104', 43.70338642079971, -72.28704169392586, '[]');
+INSERT INTO `locations` VALUES(41, 'Thorton', '105', 43.70338642079971, -72.28704169392586, '[]');
+INSERT INTO `locations` VALUES(42, 'Thorton', '107', 43.70338642079971, -72.28704169392586, '[]');
+INSERT INTO `locations` VALUES(43, 'Collis Center', '', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(44, 'Collis Center', '209', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(45, 'Collis Center', '212', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(46, 'Collis Center', '218', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(47, 'Collis Center', '219', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(48, 'Collis Center', '221', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(49, 'Collis Center', '222', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(50, 'Collis Center', '223', 43.70274047479720, -72.29000922292471, '[]');
+INSERT INTO `locations` VALUES(51, 'Collis Center', '301C', 43.70274047479720, -72.29000922292471, '[]');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `members`
+--
+
+CREATE TABLE IF NOT EXISTS `members` (
+  `email` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  `name` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `member_type` int(11) DEFAULT '-1',
+  `notifications` text COLLATE latin1_general_ci,
+  `reservations` text COLLATE latin1_general_ci,
+  PRIMARY KEY (`email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Table structure for table `tutee`
+--
+
+CREATE TABLE IF NOT EXISTS `tutee` (
+  `email` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  `tutee_courses` text COLLATE latin1_general_ci,
+  `tutee_about` text COLLATE latin1_general_ci,
+  `major` text COLLATE latin1_general_ci NOT NULL,
+  `class` text COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Table structure for table `tutor`
+--
+
+CREATE TABLE IF NOT EXISTS `tutor` (
+  `email` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  `tutor_courses` text COLLATE latin1_general_ci,
+  `tutor_about` text COLLATE latin1_general_ci,
+  `years_of_experience` int(11) DEFAULT '0' COMMENT '# years of teaching experience',
+  `major` text COLLATE latin1_general_ci,
+  `class` text COLLATE latin1_general_ci,
+  `gpa` float DEFAULT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `email` varchar(100) COLLATE latin1_general_ci NOT NULL,
+  `encrypted_password` varchar(80) COLLATE latin1_general_ci NOT NULL,
+  `salt` varchar(10) COLLATE latin1_general_ci NOT NULL,
+  `created_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`uid`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci AUTO_INCREMENT=114 ;
